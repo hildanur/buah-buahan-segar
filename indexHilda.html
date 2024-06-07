@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+    *{
+     box-sizing: border-box;
+     }
+ body {
+ 	  font-family: Arial;
+ 	  padding: 10px;
+ 	  background:lawngreen;
+ 	  margin: 0;
+ }
+/* Header/Blog Title */
+.header {
+	background-image: url(buah hilda2.jpg);
+	padding: 20px;
+	text-align: center;
+	color:royalblue;
+}
+.header h1 {
+	font-size: 50px;
+}
+/* style the top navigation bar*/
+.topnav {
+	overflow: hidden;
+	background-color: blanchedalmond;
+}
+/* atyle the topnav link */
+.topnav a {
+	float: Left;
+	display: block;
+	color: mediumpurple;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* change color on hover */
+.topnav a:hover {
+	background-color: burlywood;
+	color: black;
+}
+/* create two unequal columns that floats to each other */
+/* Left column */
+.leftcolumn {
+	float: Left;
+	width: 75%;
+}
+/*Right column */
+.rightcolumn {
+	float: Left;
+	width: 25%;
+    background-color:  lawngreen;
+    padding-left: 20px;
+}
+/* fake image */
+.fakeimg {
+	background-color: hotpink;
+	width: 100px;
+	padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: deeppink;
+	padding: 20px;
+	margin-top: 20px;
+}
+/* clear floats after the columns */
+.row: after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: hotpink;
+	margin-top: 20px;
+}
+/*Responsive layout - when the screen is less than800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+ 	.leftcolumn, .rightcolumn {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+ }
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation lik stack on to of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+    .topnav a {
+    	float: none;
+    	width: 100p%;
+    }
+}
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<h1>Ini Website Buah-Buahan Hilda</h1>
+		<p>Berbagai Macam Buah-Buahan Segar</p>
+    <img src="buah hilda2.jpg"heiht="500px"width="100%">
+		<p> Resize the browser window to se the effect.</p>
+	</div>
+
+    <div class="topnav">
+    	<a href="#">buah buahan segar</a>
+    	<a href="#">salad buah</a>
+    	<a href="#">rujak buah</a>
+    	<a href="#" style="float:right">Link</a>
+    </div>
+              <div class="row">
+              	<div class="leftcolumn">
+              		<div class="card">
+                <h5>Title description,Dec 7, 2024</h5>
+    			<img src="buah hilda7.jpg"height="400px"width="90%">
+    			<p>Some text ..</p>
+    			<p>Buah-buahan adalah bagian tumbuhan dipermukaan tanah yang tumbuh
+    			membesar dan biasanya berdaging atau banyak mengandung air.</p>
+    		</div>
+    
+    		<div class="card">
+    			<h2>TITLE HEADING</h2>
+    			<h5>Title description,Dec 7, 2024</h5>
+    			<img src="buah hilda3.jpg"height="500px"width="90%">
+    			<p>Some text ..</p>
+    			<p> buah buahan memiliki banyak ragamnya,dimana buah buahan sangat segar dan juga lezat untuk dimakan secara langsung ataupun diolah sebagai jus.dan buah-buahan juga sangat bermanfaat bagi kita semua.</p>
+    		</div>
+    	</div>
+    	<div class="rightcolumn">
+    		<div class="card">
+    			<h2>About Me</h2>
+    			<img src="buah hilda4.jpg" style="height:200px;"width="90%">
+    			<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    		</div>
+    		<div class="card">
+    			<h3>Popular post</h3>
+    			<img src="buah hilda6.jpg" style="height:200px;"width="100%">
+
+    			<img src="buah hilda5.jpg" style="height:200px;"width="100%">
+
+    			<img src="rujak hilda.jpg" style="height:200px;"width="100%">
+    		</div>
+    		<div class="card">
+    			<h3>Follow Me</h3>
+    			<p>Some text..</p>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="footer">
+    	<h2>Footer</h2>
+      <p> Copyright &copy; 2024 hildanur. ALL right reserved.</p>
+    </div>
+
+  </body>
+  </html>
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="header">
+	<h1>Header</h1>
+</div>
+  <div class="topnav">
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+</body>
+</html>
+
